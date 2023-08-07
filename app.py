@@ -6,13 +6,8 @@ from traceback import print_exc
 from flask_cors import CORS
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("SECRET", 'thankyoutonystark#weloveyou3000')
+app.secret_key = os.environ.get("SECRET", 'Techie Harpreet')
 CORS(app)
-
-
-@app.route('/')
-def home():
-    return redirect("https://cyberboysumanjay.github.io/JioSaavnAPI/")
 
 
 @app.route('/song/')
